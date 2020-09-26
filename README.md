@@ -53,6 +53,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * Only certain urls will be accepted by UI as I used simple regex statement on FE.
 * Flash Messages don't always clear nicely.
 * User can input incorrect URLs and only the server will reject them.
+* Viewing details of one item opens all itmes in view.
 
 ## Further help
 
