@@ -10,8 +10,8 @@ WORKDIR /app
 # Install Node Modules
 RUN npm install
 
-# Make port 4200 available to the world outside this container
+# Make port 5000 available to the world outside this container
 EXPOSE 5000/tcp
 
-# Start Angular in Watch mode
+# Start Server
 CMD ["npm", "start"]

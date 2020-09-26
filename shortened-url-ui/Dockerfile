@@ -18,5 +18,5 @@
 
 FROM nginx:latest
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY /dist/shortenedUrl /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 EXPOSE 4200/tcp

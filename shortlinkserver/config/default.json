@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb:27017/shortLink",
+    "mongoURI": "mongodb://database_1:27017/shortLink",
     "baseUrl": "http://localhost:5000"
 }
