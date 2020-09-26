@@ -1,6 +1,6 @@
 # ShortenedUrl Prerequisites
 
-* Download and Install Docker / Docker Composer [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) TESTED [MacOS](https://hub.docker.com/editions/community/docker-ce-desktop-mac)TESTED [Ubhuntu](https://docs.docker.com/engine/install/ubuntu/) NOT TESTED
+* Download and Install Docker / Docker Composer [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) TESTED [MacOS](https://hub.docker.com/editions/community/docker-ce-desktop-mac) TESTED [Ubhuntu](https://docs.docker.com/engine/install/ubuntu/) NOT TESTED
 
 ## ShortLink Server UI and DB
 This repo contains the source code for the shortlink server and source code along with the compiled version of the shortlinkUI
