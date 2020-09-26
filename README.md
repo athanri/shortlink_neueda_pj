@@ -1,31 +1,32 @@
 # ShortenedUrl Prerequisites
 
-* Local MongoDB installed and running. Download from [Download MongoDB](https://www.mongodb.com/try/download/community)   then [Install MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
-* NodeJS Download / Install [Node.JS](https://nodejs.org/en/) 
-* Angular CLI (Depends on NodeJS) [Angular CLI](https://github.com/angular/angular-cli)
+* Download and Install Docker / Docker Composer [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) [MacOS](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 
-## ShortLink Server
-This angular app depends on Shortlink server in order to return the auto-generated shortened url.
+## ShortLink Server UI and DB
+This repo contains the source code for the shortlink server and source code along with the compiled version of the shortlinkUI
 
-## Install Angular CLI
-Angular CLI can be installed using Node.JS.
+## Setup
+Install docker / docker composer
 
-After downloading and installing the downloaded package, Angular CLI can now be installed with the following command
-npm install -g @angular/cli
+Clone / Download this repo
 
-## Development server
+Open CMD or Terminal window
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Change Directory to cloned / downloaded repo you should notice a docker-compose.yml file in this dir (`ls`(Mac) or `dir`(Windows) to view files folders.
 
-In addition please run ShortLink Server and MongoDB in parallel 
+run `docker-compose build` allow command to complete, may take some time depending on Internet connection.
 
-[ShortLink Server](https://github.com/athanri/ShortenedURL_Server)
+run `docker-compose up` once previous command finishes.
 
-Instructions can be found on how to run the ShortLink Server in README.md file on the link above
+## View UI
+To launch frontend ui, open browser of choice and enter following address `http://localhost:4200`
 
 ## Build
+Open CMD or Terminal window
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Change Directory to `angularshortlink` inside cloned / downloaded repo
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
@@ -39,9 +40,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-To view NodeJS documentation
-[NodeJS Documentation](https://nodejs.org/en/docs/)
-
-MongoDB - [MongoDB Documentation](https://docs.mongodb.com/manual/introduction/)
+App Usage Doc available here.
