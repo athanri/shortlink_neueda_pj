@@ -1,6 +1,8 @@
 # ShortenedUrl Prerequisites
 
-* Download and Install Docker / Docker Composer [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) TESTED [MacOS](https://hub.docker.com/editions/community/docker-ce-desktop-mac) TESTED [Ubhuntu](https://docs.docker.com/engine/install/ubuntu/) NOT TESTED
+* Download and Install Docker / Docker Composer [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) `*`TESTED [MacOS](https://hub.docker.com/editions/community/docker-ce-desktop-mac) TESTED [Ubhuntu](https://docs.docker.com/engine/install/ubuntu/) NOT TESTED
+
+`*` If you encounter the following ERROR on wndows - ERROR: error pulling image configuration: unexpected EOF please see [here](https://github.com/docker/for-mac/issues/3493#issuecomment-616338458)
 
 ## ShortLink Server UI and DB
 This repo contains the source code for the shortlink server and source code along with the compiled version of the shortlinkUI
@@ -17,6 +19,8 @@ Change Directory to cloned / downloaded repo you should notice a docker-compose.
 run `docker-compose build` allow command to complete, may take some time depending on Internet connection.
 
 run `docker-compose up` once previous command finishes.
+
+`*` If you encounter the following ERROR on wndows - ERROR: error pulling image configuration: unexpected EOF please see [here](https://github.com/docker/for-mac/issues/3493#issuecomment-616338458)
 
 ## View UI
 To launch frontend ui, open browser of choice and enter following address `http://localhost:4200`
