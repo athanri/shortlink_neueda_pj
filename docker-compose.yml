@@ -1,0 +1,20 @@
+version: '3.0' # docker-compose engine version
+# Define the services/containers to be run
+services:
+    angularshortlink:
+        build: angularshortlink #specify directory of frontend service
+        ports:
+            - "4200:4200" #Ports to expose service
+
+    shortlinkserver: #server service
+        build: shortlinkserver #specify directory of server service
+        ports:
+            - "5000:5000" #Ports to expose server
+        links: 
+            - database #links this service to db service (below)
+
+    database: #db service (mongoDB)
+        image: mongodb #specify image to build container from
+        ports: 
+            - "27017:27017" #Ports to expose mongoDB (default)
+            

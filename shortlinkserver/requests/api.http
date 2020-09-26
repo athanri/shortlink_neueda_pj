@@ -1,0 +1,7 @@
+
+POST http://localhost:5000/api/url/shorten
+Content-Type: application/json
+
+{
+    "longUrl": "https://stackoverflow.com/questions/64033926/primse-in-original-request-doesnt-work-after-refresh-token-react-js-node-js"
+}
